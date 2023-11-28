@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.github/
+scripts/
+public/
+dist/
+log/
+
+**/*.md

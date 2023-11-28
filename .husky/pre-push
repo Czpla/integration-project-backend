@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Rodar lint antes de fazer push
+npm run lint:fix
+
+# Rodar testes antes de fazer push
+npm run test
+
+# Rodar build antes de fazer push
+npm run build
