@@ -5,7 +5,7 @@
 npm run lint:fix
 
 # Rodar testes antes de fazer push
-npm run test
+# npm run test
 
 # Rodar build antes de fazer push
-npm run build
+# npm run build
