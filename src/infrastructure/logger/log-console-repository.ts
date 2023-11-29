@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
-import { type LogErrorRepository } from '@business/repositories';
+
+import { type LogErrorRepository } from '@/business/protocols';
 
 export class LogConsoleRepository implements LogErrorRepository {
     public static readonly instance = new LogConsoleRepository();

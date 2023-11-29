@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 /* eslint-disable import/no-unassigned-import */
 
+import 'reflect-metadata';
 import { KnexHelper } from '@/infrastructure/database';
 import { type AddressInfo } from 'net';
-import 'reflect-metadata';
 import { Environment } from './config/environment';
 
 Environment.load(false);
@@ -23,7 +23,6 @@ Promise.all([
         const server = app.listen(Environment.port, () => {
             const { address, port } = server.address() as AddressInfo;
 
-            // console.log(`Server running at http://localhost:${port}`);
             console.log(`Server running at http://${address}:${port}`);
         });
     })

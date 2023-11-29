@@ -1,6 +1,10 @@
 import { adaptRoute } from '@/main/adapters';
 import {
-    makeCreateTeacherController, makeDeleteTeacherByIdController, makeGetPaginatedTeacherController, makeGetTeacherByIdController, makeUpdateTeacherController,
+    makeCreateTeacherController,
+    makeDeleteTeacherByIdController,
+    makeGetPaginatedTeacherController,
+    makeGetTeacherByIdController,
+    makeUpdateTeacherController,
 } from '@/main/factories';
 
 import { type Router } from 'express';
